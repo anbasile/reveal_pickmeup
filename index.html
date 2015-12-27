@@ -138,7 +138,8 @@
     <script src="js/reveal.js"></script>
     
     <script>
-      function initReveal(){ Reveal.initialize({
+      $(window).bind("load", function() {
+      Reveal.initialize({
       controls: false,
       progress: true,
       history: true,
@@ -152,8 +153,9 @@
       { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
       { src: 'plugin/zoom-js/zoom.js', async: true }
       ]
-      });}
-    </script>
+      })
+      });
+          </script>
     
   </body>
 </html>
