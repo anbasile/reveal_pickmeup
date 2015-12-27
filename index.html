@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="lib/css/zenburn.css">
   </head>
   
-  <body>
+  <body onload="Reveal.initialize">
     
     <div class="reveal">
       <div class="slides">
@@ -138,7 +138,7 @@
     <script src="js/reveal.js"></script>
     
     <script>
-      object.onload = Reveal.initialize ({
+      Reveal.initialize ({
       controls: false,
       progress: true,
       history: true,
