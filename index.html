@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="lib/css/zenburn.css">
   </head>
   
-  <body>
+  <body onload="initReveal()">
     
     <div class="reveal">
       <div class="slides">
@@ -138,8 +138,7 @@
     <script src="js/reveal.js"></script>
     
     <script>
-      window.onload=function(){
-      Reveal.initialize({
+      function initReveal(){ Reveal.initialize({
       controls: false,
       progress: true,
       history: true,
@@ -153,7 +152,7 @@
       { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
       { src: 'plugin/zoom-js/zoom.js', async: true }
       ]
-      });};
+      });}
     </script>
     
   </body>
